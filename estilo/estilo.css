@@ -1,0 +1,2397 @@
+/*RESET*/
+* {
+    /*Representa todo tipo de elemento elemento do HTML*/
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif, ;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+
+
+
+img {
+    max-width: 100%;
+    /*A imagem não passara de 100%*/
+}
+
+ul {
+    list-style: none;
+    /* não deixara marcadores*/
+}
+
+a {
+    text-decoration: none ;
+    color: black !important;
+}
+
+h2 {
+    font-size: 1.5em;
+    /* a cada em é 16px e 1.5 é 24px */
+    color: #333;
+}
+
+p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Cabeçalho */
+
+
+.cabecalho h1 {
+    font-size: 0;
+}
+
+.cabecalho {
+    float: left;
+    width: 100%;
+    height: 80px;
+    background-color: #FFD700;
+    padding: 1em 0.6em;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.menu li {
+    float: left;
+    padding: 0.7em 1em;
+    margin-right: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1em;
+    ;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black !important;
+}
+
+.logo {
+    float: left;
+    width: 20%;
+    padding: 0.1em 0.3em;
+}
+
+.logo a {
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: black !important;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 38px;
+    vertical-align: -10px;
+
+}
+
+.cabecalho form {
+    float: right;
+    width: 20%;
+    padding: 3px;
+}
+
+.cabecalho input {
+    float: left;
+    width: 80%;
+    padding: 5px;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.cabecalho button {
+    width: 20%;
+    float: right;
+    padding: 5px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+
+
+/*Sobre nós*/
+
+#sobrenos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    padding: 60px;
+}
+
+#sobrenos img {
+    width: 80%;
+}
+
+#conteudo {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 5%
+}
+
+#conteudo a {
+    padding: 10px;
+    background-color: rgb(8, 201, 201);
+    display: block;
+    margin: 30px auto;
+    max-width: max-content;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white !important;
+}
+
+
+
+/* Livros em alta HOME - Biblioteca Digital */
+
+.destaque {
+    width: 100%;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.1);
+    grid-gap: 80px 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 80px;
+    justify-content: center;
+
+}
+
+.destaque h2 {
+    grid-column: 1/4;
+    display: grid;
+    margin-top: 30px;
+    color: #ffd102;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #000;
+    text-transform: uppercase;
+}
+
+.destaque a {
+    grid-column: 1/4;
+    display: grid;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    max-width: max-content;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.livrosdestaque {
+    border: 2px solid gray;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: honeydew;
+    justify-content: center;
+}
+
+.livrosdestaque h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.livrosdestaque h4 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.livrosdestaque img {
+    border-radius: 10px;
+    width: 55%;
+    display: block;
+    margin: auto;
+    height: 280px;
+}
+
+.livrosdestaque a {
+    padding: 5%;
+    background-color: rgb(8, 201, 201);
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Home Cadastro */
+#cadastre-se {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#conteudo-cadastra-se {
+    display: grid;
+    align-content: center;
+    padding: 10% 5%;
+    max-height: max-content;
+    font-size: 1.9em;
+}
+
+.link {
+
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.link a {
+    max-width: max-content;
+    background-color: rgb(8, 201, 201);
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+    color: #FFF !important;
+    margin: 0px auto;
+}
+
+#conteudo-cadastra-se {
+    width: 100%;
+}
+
+/* Rodape */
+
+.rodape {
+    background-color: #FFD700;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    height: 90px;
+}
+
+.rodape i {
+    font-size: 1.4em;
+    margin-right: 2%;
+}
+
+.rodape h3 {
+    margin-bottom: 0px;
+    font-size: 1.3em;
+}
+
+/* Faça Login */
+#sessao {
+    width: 70%;
+    float: right;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagens/book-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 450px;
+    border-radius: 4px;
+}
+
+#sessao form {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70%;
+    width: 50%;
+    padding: 30px 40px;
+    background-image: linear-gradient(43deg, rgba(9, 62, 231, 1) 15%, rgba(9, 152, 231, 0.7992239131980917) 54%, rgba(0, 130, 255, 1) 89%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#sessao input {
+    width: 90%;
+    border: 1px solid black;
+    float: left;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+
+}
+
+#sessao form button {
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#sessao h2 {
+    color: #FFF ;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#lateral {
+    width: 30%;
+    float: left;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(43deg, rgba(9, 62, 231, 0.8216328767835259) 15%, rgba(9, 152, 231, 0.7992239131980917) 40%, rgba(255, 215, 0, 1) 63%);
+}
+
+
+
+#lateral form {
+    border: 1px solid black;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+    background-color: #FFD700;
+    border-radius: 4px;
+
+}
+
+#lateral form h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.icones {
+    float: left;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.icones i {
+    width: 10%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 15px 10px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: white;
+    float: left;
+    height: 46px;
+}
+
+#lateral input {
+    width: 90%;
+    border: 1px solid black;
+    border-left: none;
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+
+
+#lateral form button {
+    padding: 10px;
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Quem somos? */
+
+.fundador {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #FFFF8F
+}
+
+#img-principal {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+#img-principal img {
+    width: 400px;
+    height: auto;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-somos {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 0px 80px;
+}
+
+.conteudo-somos h2 {
+    font-size: 3em;
+}
+
+.conteudo-somos p {
+    font-size: 2em;
+}
+
+.img-principal-dir {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+.img-principal-dir img {
+    width: 400px;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-dir {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 0px 80px;
+}
+
+.conteudo-dir h2 {
+    font-size: 3em;
+}
+
+.conteudo-dir p {
+    font-size: 2em;
+}
+
+.fundador-dir {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width:320px)  {
+    /* Cabeçalho */
+
+
+    .cabecalho h1 {
+        font-size: 0;
+    }
+    
+    .cabecalho {
+        float: left;
+        width: 100%;
+        height: 300px;
+        background-color: #FFD700;
+        
+    }
+    
+    
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul{
+        padding: 0px;
+    }
+    
+    .menu li {
+        display: flex;
+        justify-content: center;
+        padding: 0.7em 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1em;
+        width: 100%;
+    
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: black !important;
+    }
+    
+    .logo {
+        display: flex;
+        width: 100%;
+        padding: 0.1em 0.3em;
+        justify-content: center;
+    }
+    
+    .logo a {
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .logo img {
+        width: 38px;
+        vertical-align: -10px;
+    
+    }
+    
+    .cabecalho form {
+        float: right;
+        width: 100%;
+        padding: 3px;
+    }
+    
+    .cabecalho input {
+        float: left;
+        width: 80%;
+        padding: 5px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .cabecalho button {
+        width: 20%;
+        float: right;
+        padding: 5px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    /*Sobre nós */
+    
+    #sobrenos {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 30px 40px;
+    
+    
+    }
+    
+    #sobrenos img {
+        width: 100%;
+    }
+    
+    #conteudo {
+        width: 100%;
+        font-size: 1em;
+        
+    }
+    
+    #conteudo a {
+        padding: 10px;
+        background-color: rgb(8, 201, 201);
+        display: block;
+        margin: 30px auto;
+        max-width: max-content;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: white !important;
+    }
+/* Livros em alta HOME - Biblioteca Digital */
+
+.destaque {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    
+    
+}
+
+.destaque h2 {
+    grid-column: 1/4;
+    margin-top: 30px;
+    color: #ffd102;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.destaque a {
+    grid-column: 1/4;
+    display: grid;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: white;
+    max-width: max-content;
+    text-decoration: none;
+    color: white !important;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.livrosdestaque {
+    border: 2px solid gray;
+    padding: 3%;
+    border-radius: 10px;
+    width: 80%;
+    background-color: honeydew;
+    
+}
+
+.livrosdestaque h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.livrosdestaque h4 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.livrosdestaque img {
+    border-radius: 10px;
+    width: 55%;
+    display: block;
+    margin: auto;
+    height: 20%;
+}
+
+.livrosdestaque a {
+    padding: 5%;
+    background-color: rgb(8, 201, 201);
+    max-width: max-content;
+    text-decoration: none;
+    color: white !important;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Home Cadastro */
+#cadastre-se {
+    display: grid;
+    grid-template-columns: 1fr ;
+
+}
+
+#conteudo-cadastra-se {
+    display: grid;
+    align-content: center;
+    padding: 10% 5%;
+    max-height: max-content;
+    font-size: 1em;
+}
+
+.link {
+
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.link a {
+    max-width: max-content;
+    background-color: rgb(8, 201, 201);
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+    color: #FFF !important;
+    margin: 0px auto;
+}
+
+#conteudo-cadastra-se {
+    width: 100%;
+}
+
+/* Rodape */
+
+.rodape {
+    background-color: #FFD700;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    
+    
+}
+
+.rodape i {
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+
+.rodape h3 {
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+.rodape img{
+    width: 10%;
+}
+
+/* Faça Login */
+#sessao {
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagens/book-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 450px;
+    border-radius: 4px;
+}
+
+#sessao form {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    background-image: linear-gradient(43deg, rgba(9, 62, 231, 1) 15%, rgba(9, 152, 231, 0.7992239131980917) 54%, rgba(0, 130, 255, 1) 89%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#sessao input {
+    width: 80%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+
+}
+
+#sessao form button {
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#sessao h2 {
+    color: #FFF !important;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#lateral {
+    width: 100%;
+    float: left;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(43deg, rgba(9, 62, 231, 0.8216328767835259) 15%, rgba(9, 152, 231, 0.7992239131980917) 40%, rgba(255, 215, 0, 1) 63%);
+}
+
+
+
+#lateral form {
+    border: 1px solid black;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+    background-color: #FFD700;
+    border-radius: 4px;
+
+}
+
+#lateral form h2 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.icones {
+    float: left;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.icones i {
+    width: 10%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 15px 11px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: white !important;
+    float: left;
+    height: 46px;
+    font-size: 10px;
+}
+
+#lateral input {
+    width: 90%;
+    border: 1px solid black;
+    border-left: none;
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+
+
+#lateral form button {
+    padding: 10px;
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Quem somos? */
+
+.fundador {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: #FFFF8F
+}
+
+#img-principal {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+#img-principal img {
+    width: 400px;
+    height: auto;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-somos {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 0px 40px;
+}
+
+.conteudo-somos h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.conteudo-somos p {
+    font-size: 1em;
+}
+
+.conteudo-somos img{
+    width: 30px;
+}
+
+.img-principal-dir {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+.img-principal-dir img {
+    width: 400px;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-dir {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 30px 30px 10px 30px;
+}
+
+.conteudo-dir h2 {
+    font-size: 1.3em;
+}
+
+.conteudo-dir p {
+    font-size: 1em;
+}
+
+.fundador-dir {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+}
+
+@media screen and (max-width:375px)  {
+    /* Cabeçalho */
+
+
+    .cabecalho h1 {
+        font-size: 0;
+    }
+    
+    .cabecalho {
+        float: left;
+        width: 100%;
+        height: 300px;
+        background-color: #FFD700;
+        
+    }
+    
+    
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul{
+        padding: 0px;
+    }
+    
+    .menu li {
+        display: flex;
+        justify-content: center;
+        padding: 0.7em 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1em;
+        width: 100%;
+    
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .logo {
+        display: flex;
+        width: 100%;
+        padding: 0.1em 0.3em;
+        justify-content: center;
+    }
+    
+    .logo a {
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .logo img {
+        width: 38px;
+        vertical-align: -10px;
+    
+    }
+    
+    .cabecalho form {
+        float: right;
+        width: 100%;
+        padding: 3px;
+    }
+    
+    .cabecalho input {
+        float: left;
+        width: 80%;
+        padding: 5px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .cabecalho button {
+        width: 20%;
+        float: right;
+        padding: 5px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    
+    
+    /*Sobre nós */
+    
+    #sobrenos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 30px 40px;
+    
+    
+    }
+    
+    #sobrenos img {
+        width: 100%;
+    }
+    
+    #conteudo {
+        width: 100%;
+        font-size: 1em;
+        
+    }
+    
+    #conteudo a {
+        padding: 10px;
+        background-color: rgb(8, 201, 201);
+        display: block;
+        margin: 30px auto;
+        max-width: max-content;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: white;
+    }
+/* Livros em alta HOME - Biblioteca Digital */
+
+.destaque {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    
+    
+}
+
+.destaque h2 {
+    grid-column: 1/4;
+    margin-top: 30px;
+    color: #ffd102;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    
+    text-transform: uppercase;
+}
+
+.destaque a {
+    grid-column: 1/4;
+    display: grid;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: white;
+    max-width: max-content;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.livrosdestaque {
+    border: 2px solid gray;
+    padding: 3%;
+    border-radius: 10px;
+    width: 80%;
+    background-color: honeydew;
+    
+}
+
+.livrosdestaque h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.livrosdestaque h4 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.livrosdestaque img {
+    border-radius: 10px;
+    width: 55%;
+    display: block;
+    margin: auto;
+    height: 20%;
+}
+
+.livrosdestaque a {
+    padding: 5%;
+    background-color: rgb(8, 201, 201);
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Home Cadastro */
+#cadastre-se {
+    display: grid;
+    grid-template-columns: 1fr ;
+
+}
+
+#conteudo-cadastra-se {
+    display: grid;
+    align-content: center;
+    padding: 10% 5%;
+    max-height: max-content;
+    font-size: 1em;
+}
+
+.link {
+
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.link a {
+    max-width: max-content;
+    background-color: rgb(8, 201, 201);
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+    color: #FFF;
+    margin: 0px auto;
+}
+
+#conteudo-cadastra-se {
+    width: 100%;
+}
+
+/* Rodape */
+
+.rodape {
+    background-color: #FFD700;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    
+    
+}
+
+.rodape i {
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+
+.rodape h3 {
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+.rodape img{
+    width: 10%;
+}
+
+/* Faça Login */
+#sessao {
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagens/book-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 450px;
+    border-radius: 4px;
+}
+
+#sessao form {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 9%;
+    background-image: linear-gradient(43deg, rgba(9, 62, 231, 1) 15%, rgba(9, 152, 231, 0.7992239131980917) 54%, rgba(0, 130, 255, 1) 89%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#sessao input {
+    width: 80%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+
+}
+
+#sessao form button {
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#sessao h2 {
+    color: #FFF;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#lateral {
+    width: 100%;
+    float: left;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(43deg, rgba(9, 62, 231, 0.8216328767835259) 15%, rgba(9, 152, 231, 0.7992239131980917) 40%, rgba(255, 215, 0, 1) 63%);
+}
+
+
+
+#lateral form {
+    border: 1px solid black;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+    background-color: #FFD700;
+    border-radius: 4px;
+
+}
+
+#lateral form h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.icones {
+    float: left;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.icones i {
+    width: 10%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 15px 11px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: white;
+    float: left;
+    height: 46px;
+    font-size: 10px;
+}
+
+#lateral input {
+    width: 90%;
+    border: 1px solid black;
+    border-left: none;
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+
+
+#lateral form button {
+    padding: 10px;
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Quem somos? */
+
+.fundador {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: #FFFF8F
+}
+
+#img-principal {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+#img-principal img {
+    width: 400px;
+    height: auto;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-somos {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 0px 40px;
+}
+
+.conteudo-somos h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.conteudo-somos p {
+    font-size: 1em;
+}
+
+.conteudo-somos img{
+    width: 30px;
+}
+
+.img-principal-dir {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+.img-principal-dir img {
+    width: 400px;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-dir {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 30px 30px 10px 30px;
+}
+
+.conteudo-dir h2 {
+    font-size: 1.3em;
+}
+
+.conteudo-dir p {
+    font-size: 1em;
+}
+
+.fundador-dir {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+}
+
+
+@media screen and (max-width:425px)  {
+    /* Cabeçalho */
+
+
+    .cabecalho h1 {
+        font-size: 0;
+    }
+    
+    .cabecalho {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        background-color: #FFD700;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul{
+        padding: 0px;
+    }
+    
+    .menu li {
+        display: flex;
+        justify-content: center;
+        padding: 0.7em 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1em;
+        width: 100%;
+    
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .logo {
+        display: flex;
+        width: 100%;
+        padding: 0.1em 0.3em;
+        justify-content: center;
+    }
+    
+    .logo a {
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .logo img {
+        width: 38px;
+        vertical-align: -10px;
+    
+    }
+    
+    .cabecalho form {
+        float: right;
+        width: 70%;
+        padding: 3px;
+    }
+    
+    .cabecalho input {
+        float: left;
+        width: 80%;
+        padding: 5px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .cabecalho button {
+        width: 20%;
+        float: right;
+        padding: 5px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    
+    
+    /*Sobre nós */
+    
+    #sobrenos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        padding: 30px 40px;
+    
+    
+    }
+    
+    #sobrenos img {
+        width: 100%;
+    }
+    
+    #conteudo {
+        width: 100%;
+        font-size: 1em;
+        
+    }
+    
+    #conteudo a {
+        padding: 10px;
+        background-color: rgb(8, 201, 201);
+        display: block;
+        margin: 30px auto;
+        max-width: max-content;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: white;
+    }
+/* Livros em alta HOME - Biblioteca Digital */
+
+.destaque {
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+    
+    
+}
+
+.destaque h2 {
+    grid-column: 1/4;
+    margin-top: 30px;
+    color: #ffd102;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    
+    text-transform: uppercase;
+}
+
+.destaque a {
+    grid-column: 1/4;
+    display: grid;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: white;
+    max-width: max-content;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.livrosdestaque {
+    border: 2px solid gray;
+    padding: 3%;
+    border-radius: 10px;
+    width: 80%;
+    background-color: honeydew;
+    
+}
+
+.livrosdestaque h3 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.livrosdestaque h4 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.livrosdestaque img {
+    border-radius: 10px;
+    width: 55%;
+    display: block;
+    margin: auto;
+    height: 20%;
+}
+
+.livrosdestaque a {
+    padding: 5%;
+    background-color: rgb(8, 201, 201);
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Home Cadastro */
+#cadastre-se {
+    display: grid;
+    grid-template-columns: 1fr ;
+
+}
+
+#conteudo-cadastra-se {
+    display: grid;
+    align-content: center;
+    padding: 10% 5%;
+    max-height: max-content;
+    font-size: 1em;
+}
+
+.link {
+
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.link a {
+    max-width: max-content;
+    background-color: rgb(8, 201, 201);
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+    color: #FFF;
+    margin: 0px auto;
+}
+
+#conteudo-cadastra-se {
+    width: 100%;
+}
+
+/* Rodape */
+
+.rodape {
+    background-color: #FFD700;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    
+    
+}
+
+.rodape i {
+    font-size: 1.2em;
+    margin-right: 2%;
+}
+
+.rodape h3 {
+    margin-bottom: 0px;
+    font-size: 1em;
+}
+
+.rodape img{
+    width: 10%;
+}
+
+/* Faça Login */
+#sessao {
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagens/book-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 450px;
+    border-radius: 4px;
+}
+
+#sessao form {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 95%;
+    background-image: linear-gradient(43deg, rgba(9, 62, 231, 1) 15%, rgba(9, 152, 231, 0.7992239131980917) 54%, rgba(0, 130, 255, 1) 89%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#sessao input {
+    width: 80%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+
+}
+
+#sessao form button {
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#sessao h2 {
+    color: #FFF;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#lateral {
+    width: 100%;
+    float: left;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(43deg, rgba(9, 62, 231, 0.8216328767835259) 15%, rgba(9, 152, 231, 0.7992239131980917) 40%, rgba(255, 215, 0, 1) 63%);
+}
+
+
+
+#lateral form {
+    border: 1px solid black;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 80%;
+    padding: 10px;
+    background-color: #FFD700;
+    border-radius: 4px;
+
+}
+
+#lateral form h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.icones {
+    float: left;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.icones i {
+    width: 10%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 15px 11px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: white;
+    float: left;
+    height: 46px;
+    font-size: 10px;
+}
+
+#lateral input {
+    width: 90%;
+    border: 1px solid black;
+    border-left: none;
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+
+
+#lateral form button {
+    padding: 10px;
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Quem somos? */
+
+.fundador {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: #FFFF8F
+}
+
+#img-principal {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+#img-principal img {
+    width: 400px;
+    height: auto;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-somos {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 0px 40px;
+}
+
+.conteudo-somos h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.conteudo-somos p {
+    font-size: 1em;
+}
+
+.conteudo-somos img{
+    width: 30px;
+}
+
+.img-principal-dir {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+.img-principal-dir img {
+    width: 400px;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-dir {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 30px 30px 10px 30px;
+}
+
+.conteudo-dir h2 {
+    font-size: 1.3em;
+}
+
+.conteudo-dir p {
+    font-size: 1em;
+}
+
+.fundador-dir {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+}
+
+@media screen and (max-width:768px)  {
+    /* Cabeçalho */
+
+
+    .cabecalho h1 {
+        font-size: 0;
+    }
+    
+    .cabecalho {
+        float: left;
+        width: 100%;
+        height: 300px;
+        background-color: #FFD700;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    
+    
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul{
+        padding: 0px;
+    }
+    
+    .menu li {
+        display: flex;
+        justify-content: center;
+        padding: 0.7em 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1em;
+        width: 100%;
+    
+    }
+    
+    .menu li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .logo {
+        display: flex;
+        width: 100%;
+        padding: 0.1em 0.3em;
+        justify-content: center;
+    }
+    
+    .logo a {
+        font-size: 20px;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .logo img {
+        width: 38px;
+        vertical-align: -10px;
+    
+    }
+    
+    .cabecalho form {
+        width: 40%;
+        padding: 3px;
+        padding: 0;
+    }
+    
+    .cabecalho input {
+        float: left;
+        width: 80%;
+        padding: 5px;
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .cabecalho button {
+        width: 20%;
+        float: right;
+        padding: 5px;
+        border-radius: 0px 4px 4px 0px;
+    }
+    
+    
+    
+    /*Sobre nós */
+    
+    #sobrenos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+        padding: 30px 40px;
+    
+    
+    }
+    
+    #sobrenos img {
+        width: 60%;
+        margin: auto;
+    }
+    
+    #conteudo {
+        width: 100%;
+        font-size: 1em;
+        
+    }
+    
+    #conteudo a {
+        padding: 10px;
+        background-color: rgb(8, 201, 201);
+        display: block;
+        margin: 30px auto;
+        max-width: max-content;
+        font-family: 'Noto Sans JP', sans-serif;
+        color: white;
+    }
+/* Livros em alta HOME - Biblioteca Digital */
+
+.destaque {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+;
+
+}
+
+.destaque h2 {
+    grid-column: 1/4;
+    display: grid;
+    margin-top: 30px;
+    color: #ffd102;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.destaque a {
+    grid-column: 1/4;
+    display: grid;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    max-width: max-content;
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.livrosdestaque {
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: honeydew;
+    justify-content: center;
+    justify-content: end;
+    align-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.livrosdestaque h3 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.livrosdestaque h4 {
+    text-align: center;
+    font-size: 1.0em;
+}
+
+.livrosdestaque img {
+    border-radius: 10px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    height: 250px;
+}
+
+.livrosdestaque a {
+    padding: 5%;
+    background-color: rgb(8, 201, 201);
+    max-width: max-content;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Home Cadastro */
+#cadastre-se {
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+
+}
+
+#cadastra-se-img{
+width: 100%;
+padding: 0px 100px;
+}
+
+
+#conteudo-cadastra-se {
+    display: grid;
+    align-content: center;
+    padding: 10% 5%;
+    max-height: max-content;
+    font-size: 1em;
+}
+
+.link {
+
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.link a {
+    max-width: max-content;
+    background-color: rgb(8, 201, 201);
+    padding: 10px;
+    text-decoration: none;
+    justify-content: center;
+    color: #FFF;
+    margin: 0px auto;
+}
+
+#conteudo-cadastra-se {
+    width: 100%;
+}
+
+/* Rodape */
+
+.rodape {
+    background-color: #FFD700;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+    
+    
+}
+
+.rodape i {
+    font-size: 1.4em;
+    margin-right: 2%;
+}
+
+.rodape h3 {
+    margin-bottom: 0px;
+    font-size: 1.4em;
+}
+
+.rodape img{
+    width: 7%;
+}
+
+/* Faça Login */
+#sessao {
+    width: 100%;
+    height: 590px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/imagens/book-background.jpeg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 450px;
+    border-radius: 4px;
+}
+
+#sessao form {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 70%;
+    background-image: linear-gradient(43deg, rgba(9, 62, 231, 1) 15%, rgba(9, 152, 231, 0.7992239131980917) 54%, rgba(0, 130, 255, 1) 89%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#sessao input {
+    width: 80%;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+
+}
+
+#sessao form button {
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#sessao h2 {
+    color: #FFF;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#lateral {
+    width: 100%;
+    float: left;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(43deg, rgba(9, 62, 231, 0.8216328767835259) 15%, rgba(9, 152, 231, 0.7992239131980917) 40%, rgba(255, 215, 0, 1) 63%);
+}
+
+
+
+#lateral form {
+    border: 1px solid black;
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 60%;
+    padding: 10px;
+    background-color: #FFD700;
+    border-radius: 4px;
+
+}
+
+#lateral form h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.icones {
+    float: left;
+    width: 100%;
+    display: flex;
+
+
+
+}
+
+.icones i {
+    width: 10%;
+    border: 1px solid black;
+    border-right: none;
+    padding: 15px 11px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: white;
+    float: left;
+    height: 46px;
+    font-size: 14px;
+}
+
+#lateral input {
+    width: 90%;
+    border: 1px solid black;
+    border-left: none;
+    float: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 0px 4px 4px 0px;
+
+}
+
+
+
+#lateral form button {
+    padding: 10px;
+    max-width: max-content;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+
+}
+
+/* Quem somos? */
+
+.fundador {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    background-color: #FFFF8F
+}
+
+#img-principal {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+#img-principal img {
+    width: 400px;
+    height: auto;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-somos {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 0px 40px;
+}
+
+.conteudo-somos h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.conteudo-somos p {
+    font-size: 1em;
+}
+
+.conteudo-somos img{
+    width: 30px;
+}
+
+.img-principal-dir {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 50px;
+
+}
+
+.img-principal-dir img {
+    width: 400px;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.conteudo-dir {
+    display: grid;
+    justify-content: left center;
+    align-content: center;
+    padding: 30px 30px 10px 30px;
+}
+
+.conteudo-dir h2 {
+    font-size: 1.3em;
+}
+
+.conteudo-dir p {
+    font-size: 1em;
+}
+
+.fundador-dir {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+}
+
+
+
